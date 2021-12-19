@@ -1,0 +1,183 @@
+{
+	"meta": {
+		"version": "1.1.0",
+		"canonical": "https://gist.github.com/matjahs/00071c5d8c74d4a9c7b88b856b31fd63/raw/3435ba419e8fe1b0ebc6406977538a098a70e913/resume.json",
+		"lastModified": "2021-12-19"
+	},
+	"basics": {
+		"name": "Matjah Sonneveld",
+		"label": "Cloud Engineer",
+		"picture": "https://images.credly.com/size/176x176/images/0060c656-cd90-4da8-955d-6abc5fd9f22a/blob.jpeg",
+		"email": "matjah@matjah.eu",
+		"phone": "+31651332403",
+		"website": "https://github.com/matjahs",
+		"location": {
+			"city": "Nijmegen",
+			"countryCode": "NL",
+			"region": "Gelderland"
+		},
+		"profiles": [
+			{
+				"network": "Linkedin",
+				"url": "https://linkedin.com/in/matjahs"
+			},
+			{
+				"network": "Github",
+				"username": "matjahs",
+				"url": "https://github.com/matjahs"
+			}
+		]
+	},
+	"work": [
+		{
+			"company": "BlueConic",
+			"position": "Cloud Engineer",
+			"website": "https://blueconic.com",
+			"startDate": "2021-04-01",
+			"summary": "First member of BlueConic's Cloud Engineering team",
+			"highlights": [
+				"Implemented Saltstack",
+				"Took on ownership of CI/CD pipeline (Bitbucket Cloud)"
+			]
+		},
+		{
+			"company": "BlueConic",
+			"position": "Software Engineer",
+			"website": "https://blueconic.com",
+			"startDate": "2020-04-01",
+			"endDate": "2021-03-31",
+			"summary": "Part of the team that develops certified plugins for BlueConic's platform",
+			"highlights": [
+				"Development of certified plugins for the BlueConic platform",
+				"Improvement of plugin developer experience and productivity"
+			]
+		},
+		{
+			"company": "Hexon B.V.",
+			"position": "Programmer",
+			"website": "https://hexon.nl",
+			"startDate": "2013-02-01",
+			"endDate": "2020-03-01",
+			"summary": "ICT services for the automotive industry. Enables car companies to advertise their inventory automatically by integrating with external inventory management systems.",
+			"highlights": [
+				"Implemented automatic ingestion of inventory from customer APIs",
+				"Improved embeddable stock gallery module",
+				"Migrated performance sensitive daemon processes from PHP to Golang"
+			]
+		}
+	],
+	"projects": [],
+	"volunteer": [],
+	"education": [
+		{
+			"institution": "Radboud University, Nijmegen",
+			"area": "Computing Science",
+			"studyType": "Bachelor of Science (BSc)",
+			"startDate": "2011-09-01",
+			"endDate": "2019-11-03",
+			"courses": ["Computer Security", "Artificial Intelligence"]
+		},
+		{
+			"institution": "HAN Hogeschool Eindhoven",
+			"area": "HBO ICT",
+			"studyType": "Propaedeutics",
+			"startDate": "2010-09-01",
+			"endDate": "2011-07-15",
+			"courses": ["Software Engineering", "Hardware & Embedded Technology"]
+		}
+	],
+	"certificates": [
+		{
+			"name": "AWS Certified DevOps Engineer – Professional",
+			"url": "https://www.credly.com/badges/117bbf98-4498-418d-a11e-94b329d99a90",
+			"date": "2021-12-13",
+			"issuer": "Amazon Web Services Training and Certification"
+		},
+		{
+			"name": "AWS Certified Solutions Architect – Associate",
+			"url": "https://www.credly.com/badges/0a9ec584-d847-41af-a37e-84144b6c8761",
+			"date": "2021-06-11",
+			"issuer": "Amazon Web Services Training and Certification"
+		},
+		{
+			"name": "AWS Certified Cloud Practitioner",
+			"url": "https://www.credly.com/badges/a8f29e68-720a-451d-a4e8-8b430d3c28ac",
+			"date": "2021-03-30",
+			"issuer": "Amazon Web Services Training and Certification"
+		}
+	],
+	"awards": [
+		{
+			"title": "Blueconic Humility Award",
+			"date": "2021-01-09",
+			"awarder": "BlueConic (as part of ops-team)",
+			"summary": "To the person (or team) who   credit for their work; demonstrates tremendous compassion and empathy for everyone; and for whom no job is too small."
+		}
+	],
+	"publications": [],
+	"skills": [
+		{
+			"name": "Frontend Development",
+			"keywords": ["JS", "TS", "React", "Cypress", "Jest"],
+			"level": "Expert"
+		},
+		{
+			"name": "Backend Development",
+			"keywords": ["Go", "Node.js", "Python"],
+			"level": "Expert"
+		},
+		{
+			"name": "Infrastructure as Code",
+			"keywords": ["Terraform", "AWS CDK"],
+			"level": "Proficient"
+		},
+		{
+			"name": "Configuration Management",
+			"keywords": ["SaltStack", "Ansible"],
+			"level": "Proficient"
+		},
+		{
+			"name": "DevOps",
+			"keywords": ["CloudWatch", "Incident Response", "Monitoring"],
+			"level": "Proficient"
+		},
+		{
+			"name": "Databases",
+			"keywords": ["SQL", "NoSQL", "Cassandra"],
+			"level": "Competent"
+		},
+		{
+			"name": "CI/CD",
+			"keywords": ["Github Actions", "AWS CodePipeline", "Bitbucket Pipelines", "Docker"],
+			"level": "Competent"
+		},
+		{
+			"name": "Linux",
+			"keywords": ["Debian", "Amazon Linux 2", "Bash"],
+			"level": "Proficient"
+		}
+	],
+	"languages": [
+		{
+			"language": "Dutch",
+			"fluency": "Native speaker",
+			"level": "Native"
+		},
+		{
+			"language": "English",
+			"fluency": "Fluent",
+			"level": "Proficient"
+		}
+	],
+	"interests": [
+		{
+			"name": "Code",
+			"keywords": ["Coding challenges"]
+		},
+		{
+			"name": "Home-labs",
+			"keywords": ["Self-hosted", "VMware ESXi", "Unifi"]
+		}
+	],
+	"references": []
+}
