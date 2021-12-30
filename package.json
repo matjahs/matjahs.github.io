@@ -1,0 +1,13 @@
+{
+  "name": "jsonresume-generator",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^14",
+    "@tsconfig/node14": "latest",
+    "typescript": "latest",
+    "ts-node": "latest"
+  }
+}
