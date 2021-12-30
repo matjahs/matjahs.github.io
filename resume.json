@@ -1,0 +1,121 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
+  "meta": {
+    "version": "1.1.0",
+    "canonical": "https://gist.github.com/matjahs/00071c5d8c74d4a9c7b88b856b31fd63/raw/3435ba419e8fe1b0ebc6406977538a098a70e913/resume.json",
+    "lastModified": "2021-12-19",
+    "theme": "jsonresume-theme-elegant"
+  },
+  "basics": {
+    "name": "Matjah Sonneveld",
+    "label": "Cloud Engineer",
+    "picture": "https://images.credly.com/size/176x176/images/0060c656-cd90-4da8-955d-6abc5fd9f22a/blob.jpeg",
+    "email": "matjah@matjah.eu",
+    "phone": "+31651332403",
+    "url": "https://matjahs.github.io",
+    "location": {
+      "city": "Nijmegen",
+      "countryCode": "NL",
+      "region": "Gelderland"
+    },
+    "profiles": [
+      {
+        "network": "Linkedin",
+        "url": "https://linkedin.com/in/matjahs"
+      },
+      {
+        "network": "Github",
+        "username": "matjahs",
+        "url": "https://github.com/matjahs"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "BlueConic",
+      "position": "Cloud Engineer",
+      "website": "https://blueconic.com",
+      "startDate": "2021-04-01",
+      "summary": "Increasing the reliability and scalability of BlueConic's cloud infrastructure",
+      "highlights": [
+        "Implemented Saltstack for EC2 fleet",
+        "Member of incident response team"
+      ]
+    },
+    {
+      "name": "BlueConic",
+      "position": "Software Engineer",
+      "website": "https://blueconic.com",
+      "startDate": "2020-04-01",
+      "endDate": "2021-03-31",
+      "summary": "Plugin development and maintenance",
+      "highlights": [
+        "Improved DX for plugin developers",
+        "Modernized CI/CD setup for Yarn/TS/React monorepo"
+      ]
+    },
+    {
+      "name": "Hexon B.V.",
+      "position": "Programmer",
+      "startDate": "2013-02-01",
+      "endDate": "2020-03-01",
+      "summary": "Impelentation of new automated import/export of customer API data"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Radboud University, Nijmegen",
+      "area": "Computing Science",
+      "studyType": "Bachelor of Science (BSc)",
+      "startDate": "2011-09-01",
+      "endDate": "2019-11-03",
+      "courses": ["Computer Security", "Artificial Intelligence"]
+    }
+  ],
+  "certificates": [
+    {
+      "name": "AWS Certified DevOps Engineer Professional",
+      "url": "https://www.credly.com/badges/117bbf98-4498-418d-a11e-94b329d99a90",
+      "urlName": "verif",
+      "date": "2021-12-13",
+      "issuer": "Amazon Web Services"
+    },
+    {
+      "name": "AWS Certified Solutions Architect Associate",
+      "url": "https://www.credly.com/badges/0a9ec584-d847-41af-a37e-84144b6c8761",
+      "date": "2021-06-11",
+      "issuer": "Amazon Web Services"
+    },
+    {
+      "name": "AWS Certified Cloud Practitioner",
+      "url": "https://www.credly.com/badges/a8f29e68-720a-451d-a4e8-8b430d3c28ac",
+      "date": "2021-03-30",
+      "issuer": "Amazon Web Services"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Blueconic Humility Award",
+      "date": "2021-01-09",
+      "awarder": "BlueConic (as part of ops-team)",
+      "summary": "To the person (or team) who   credit for their work; demonstrates tremendous compassion and empathy for everyone; and for whom no job is too small."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Frontend Development",
+      "keywords": ["JS", "TS", "React", "Cypress", "Jest"],
+      "level": "Advanced"
+    },
+    {
+      "name": "Backend Development",
+      "keywords": ["Go", "Node.js", "Python", "Docker"],
+      "level": "Master"
+    },
+    {
+      "name": "DevOps",
+      "keywords": ["AWS", "SaltStack", "Terraform", "CI/CD", "Linux"],
+      "level": "Advanced"
+    }
+  ]
+}
