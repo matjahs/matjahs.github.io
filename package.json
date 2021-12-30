@@ -2,12 +2,19 @@
   "name": "jsonresume-generator",
   "version": "0.1.0",
   "private": true,
-  "scripts": {},
-  "dependencies": {},
-  "devDependencies": {
-    "@types/node": "^14",
-    "@tsconfig/node14": "latest",
-    "typescript": "latest",
-    "ts-node": "latest"
+  "author": {
+    "name": "Matjah Sonneveld",
+    "email": "matjah@matjah.eu"
+  },
+  "homepage": "https://matjahs.github.io",
+  "repository": {
+    "type": "git",
+    "url": "github.com/matjahs/matjahs.github.io"
+  },
+  "scripts": {
+    "build": "node ./build.js"
+  },
+  "dependencies": {
+    "jsonresume-theme-elegant": "^1.16.1"
   }
 }
