@@ -7,7 +7,7 @@
   "basics": {
     "label": "Cloud Engineer",
     "email": "matjah@matjah.eu",
-    "phone": "+31651332403",
+    "phone": "",
     "website": "https://matjah.eu",
     "name": "Matjah Sonneveld",
     "location": {
@@ -127,33 +127,20 @@
       "keywords": [
         "Go",
         "Nodejs",
-        "Python"
+        "Python",
+        "Bash"
       ]
     },
     {
       "name": "Infrastructure",
       "level": "Advanced",
       "keywords": [
+        "Linux",
         "SaltStack",
         "Terraform",
-        "CI/CD"
+        "CI/CD",
+        "Docker"
       ]
-    },
-    {
-      "name": "Other",
-      "level": "Advanced",
-      "keywords": [
-        "Docker",
-        "Linux",
-        "Bash"
-      ]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Blueconic Humility Award",
-      "date": "2021-12-09",
-      "awarder": "BlueConic"
     }
   ],
   "languages": [
