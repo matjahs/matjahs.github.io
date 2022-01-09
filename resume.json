@@ -1,8 +1,8 @@
 {
   "meta": {
     "canonical": "https://matjah.eu",
-    "version": "1.0.0",
-    "lastModified": "2022-01-09T00:00:00.000Z"
+    "version": "1.1.0",
+    "lastModified": "2022-01-09"
   },
   "basics": {
     "label": "Cloud Engineer",
@@ -40,11 +40,11 @@
       "url": "https://blueconic.com",
       "position": "Cloud Engineer",
       "startDate": "2021-04-01",
-      "summary": "Increasing the reliability and scalability of BlueConic's cloud infrastructure",
+      "summary": "Increasing the reliability and scalability of BlueConic's cloud infrastructure.",
       "highlights": [
-        "Created SaltStack setup to automate configuration management across BlueConic's AWS infrastructure",
-        "Developed tools for managing BlueConic's infrastructure",
-        "Incident response"
+        "Created SaltStack setup to automate configuration management across BlueConic's AWS infrastructure.",
+        "Developed tools for managing BlueConic's infrastructure.",
+        "Incident response."
       ]
     },
     {
@@ -56,8 +56,9 @@
       "endDate": "2021-04-01",
       "summary": "Plugin development and maintenance",
       "highlights": [
-        "Improved DX for plugin developers",
-        "Modernized CI/CD setup for Yarn/TS/React monorepo"
+        "Created new plugins for the BlueConic platform.",
+        "Increased developer effectiveness and improving developer experience.",
+        "Adapted CI/CD tools to accommodate for TypeScript/React plugins."
       ]
     },
     {
@@ -68,11 +69,11 @@
       "position": "Software Developer",
       "startDate": "2013-02-01",
       "endDate": "2020-04-01",
-      "summary": "Full stack developer",
+      "summary": "Full stack development",
       "highlights": [
-        "PHP, MySQL, Go, SVN and Git development",
-        "Developed data ingestion and processing tools for Automotive customers",
-        "Developed an embeddable web application to visualize Automotive inventory"
+        "PHP, MySQL, Go, SVN and Git development.",
+        "Developed data ingestion and processing tools for Automotive customers.",
+        "Developed an embeddable web application to visualize Automotive inventory."
       ]
     }
   ],
