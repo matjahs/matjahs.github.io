@@ -1,25 +1,25 @@
 {
   "meta": {
-    "version": "1.1.0",
-    "canonical": "https://gist.github.com/matjahs/00071c5d8c74d4a9c7b88b856b31fd63/raw/3435ba419e8fe1b0ebc6406977538a098a70e913/resume.json",
-    "lastModified": "2022-01-09",
-    "theme": "jsonresume-theme-elegant"
+    "canonical": "https://matjah.eu",
+    "version": "1.0.0",
+    "lastModified": "2022-01-09T00:00:00.000Z"
   },
   "basics": {
+    "label": "Cloud Engineer",
+    "email": "matjah@matjah.eu",
+    "phone": "+31651332403",
+    "website": "https://matjah.eu",
+    "name": "Matjah Sonneveld",
     "location": {
       "address": "",
       "city": "Nijmegen",
-      "region": "",
       "countryCode": "NL",
-      "postalCode": ""
+      "postalCode": "",
+      "region": "Gelderland"
     },
-    "image": "https://images.credly.com/size/176x176/images/0060c656-cd90-4da8-955d-6abc5fd9f22a/blob.jpeg",
-    "label": "Cloud Engineer",
     "url": "https://matjah.eu",
-    "email": "matjah@matjah.eu",
+    "image": "https://images.credly.com/size/176x176/images/0060c656-cd90-4da8-955d-6abc5fd9f22a/blob.jpeg",
     "summary": "",
-    "phone": "",
-    "name": "Matjah Sonneveld",
     "profiles": [
       {
         "network": "Linkedin",
@@ -35,19 +35,22 @@
   },
   "work": [
     {
-      "company": "BlueConic",
-      "website": "https://blueconic.com",
+      "name": "BlueConic",
+      "location": "Nijmegen",
+      "url": "https://blueconic.com",
       "position": "Cloud Engineer",
       "startDate": "2021-04-01",
       "summary": "Increasing the reliability and scalability of BlueConic's cloud infrastructure",
       "highlights": [
-        "Implemented Saltstack for EC2 fleet",
-        "Member of incident response team"
+        "Created SaltStack setup to automate configuration management across BlueConic's AWS infrastructure",
+        "Developed tools for managing BlueConic's infrastructure",
+        "Incident response"
       ]
     },
     {
-      "company": "BlueConic",
-      "website": "https://blueconic.com",
+      "name": "BlueConic",
+      "location": "Nijmegen",
+      "url": "https://blueconic.com",
       "position": "Software Engineer",
       "startDate": "2020-04-01",
       "endDate": "2021-04-01",
@@ -59,22 +62,18 @@
     },
     {
       "company": "Hexon",
-      "website": "https://hexon.nl",
-      "position": "Programmer",
+      "location": "Nijmegen",
+      "name": "Hexon",
+      "url": "https://hexon.nl",
+      "position": "Software Developer",
       "startDate": "2013-02-01",
       "endDate": "2020-04-01",
-      "summary": "Implementation of new automated import/export of customer API data",
-      "highlights": []
-    }
-  ],
-  "education": [
-    {
-      "institution": "Radboud University, Nijmegen",
-      "courses": ["Computer Security", "A.I. and Machine Learning"],
-      "startDate": "2011-09-01",
-      "endDate": "2019-11-03",
-      "area": "Computer Science",
-      "studyType": "Bachelor"
+      "summary": "Full stack developer",
+      "highlights": [
+        "PHP, MySQL, Go, SVN and Git development",
+        "Developed data ingestion and processing tools for Automotive customers",
+        "Developed an embeddable web application to visualize Automotive inventory"
+      ]
     }
   ],
   "certificates": [
@@ -97,26 +96,57 @@
       "url": "https://www.credly.com/badges/117bbf98-4498-418d-a11e-94b329d99a90?source=linked_in_profile"
     }
   ],
+  "education": [
+    {
+      "institution": "Radboud University, Nijmegen",
+      "url": "https://www.ru.nl",
+      "courses": [
+        "Computer Security",
+        "A.I. and Machine Learning"
+      ],
+      "startDate": "2011-09-01",
+      "endDate": "2019-11-03",
+      "area": "Computer Science",
+      "studyType": "Bachelor"
+    }
+  ],
   "skills": [
     {
+
       "name": "Frontend",
       "level": "Advanced",
-      "keywords": ["TypeScript", "React", "TDD"]
+      "keywords": [
+        "TypeScript",
+        "React",
+        "TDD"
+      ]
     },
     {
       "name": "Backend",
       "level": "Master",
-      "keywords": ["Go", "Nodejs", "Python"]
+      "keywords": [
+        "Go",
+        "Nodejs",
+        "Python"
+      ]
     },
     {
       "name": "Infrastructure",
       "level": "Advanced",
-      "keywords": ["SaltStack", "Terraform", "CI/CD"]
+      "keywords": [
+        "SaltStack",
+        "Terraform",
+        "CI/CD"
+      ]
     },
     {
       "name": "Other",
       "level": "Advanced",
-      "keywords": ["Docker", "Linux", "Bash"]
+      "keywords": [
+        "Docker",
+        "Linux",
+        "Bash"
+      ]
     }
   ],
   "awards": [
