@@ -6,12 +6,20 @@
     "theme": "jsonresume-theme-elegant"
   },
   "basics": {
+    "location": {
+      "address": "",
+      "city": "Nijmegen",
+      "region": "",
+      "countryCode": "NL",
+      "postalCode": ""
+    },
+    "image": "https://images.credly.com/size/176x176/images/0060c656-cd90-4da8-955d-6abc5fd9f22a/blob.jpeg",
     "label": "Cloud Engineer",
-    "website": "https://matjah.eu",
+    "url": "https://matjah.eu",
     "email": "matjah@matjah.eu",
-    "phone": "+31651332403",
+    "summary": "",
+    "phone": "",
     "name": "Matjah Sonneveld",
-    "picture": "https://images.credly.com/size/176x176/images/0060c656-cd90-4da8-955d-6abc5fd9f22a/blob.jpeg",
     "profiles": [
       {
         "network": "Linkedin",
@@ -62,10 +70,7 @@
   "education": [
     {
       "institution": "Radboud University, Nijmegen",
-      "courses": [
-        "Computer Security",
-        "A.I. and Machine Learning"
-      ],
+      "courses": ["Computer Security", "A.I. and Machine Learning"],
       "startDate": "2011-09-01",
       "endDate": "2019-11-03",
       "area": "Computer Science",
@@ -76,19 +81,19 @@
     {
       "name": "AWS Certified Cloud Practitioner",
       "issuer": "Amazon Web Services (AWS)",
-      "date": "2021-03",
+      "date": "2021-03-01",
       "url": "https://www.credly.com/badges/b9ebf29a-3870-4db5-ad24-34ed1e7061e1?source=linked_in_profile"
     },
     {
       "name": "AWS Certified Solutions Architect - Associate",
       "issuer": "Amazon Web Services (AWS)",
-      "date": "2021-06",
+      "date": "2021-06-01",
       "url": "https://www.credly.com/badges/0a9ec584-d847-41af-a37e-84144b6c8761?source=linked_in_profile"
     },
     {
       "name": "AWS Certified DevOps Engineer - Professional",
       "issuer": "Amazon Web Services (AWS)",
-      "date": "2021-12",
+      "date": "2021-12-01",
       "url": "https://www.credly.com/badges/117bbf98-4498-418d-a11e-94b329d99a90?source=linked_in_profile"
     }
   ],
@@ -96,38 +101,22 @@
     {
       "name": "Frontend",
       "level": "Advanced",
-      "keywords": [
-        "TypeScript",
-        "React",
-        "TDD"
-      ]
+      "keywords": ["TypeScript", "React", "TDD"]
     },
     {
       "name": "Backend",
       "level": "Master",
-      "keywords": [
-        "Go",
-        "Nodejs",
-        "Python"
-      ]
+      "keywords": ["Go", "Nodejs", "Python"]
     },
     {
       "name": "Infrastructure",
       "level": "Advanced",
-      "keywords": [
-        "SaltStack",
-        "Terraform",
-        "CI/CD"
-      ]
+      "keywords": ["SaltStack", "Terraform", "CI/CD"]
     },
     {
       "name": "Other",
       "level": "Advanced",
-      "keywords": [
-        "Docker",
-        "Linux",
-        "Bash"
-      ]
+      "keywords": ["Docker", "Linux", "Bash"]
     }
   ],
   "awards": [

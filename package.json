@@ -6,7 +6,7 @@
     "name": "Matjah Sonneveld",
     "email": "matjah@matjah.eu"
   },
-  "homepage": "https://matjahs.github.io",
+  "homepage": "https://matjahs.eu",
   "repository": {
     "type": "git",
     "url": "github.com/matjahs/matjahs.github.io"
@@ -15,7 +15,7 @@
     "build": "node ./build.mjs"
   },
   "dependencies": {
-    "got": "^12.0.0",
+    "got": "latest",
     "jsonresume-theme-elegant": "^1.16.1"
   },
   "engines": {
