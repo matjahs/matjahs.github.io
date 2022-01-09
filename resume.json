@@ -1,26 +1,15 @@
 {
-  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
-  "meta": {
-    "version": "1.1.0",
-    "canonical": "https://gist.github.com/matjahs/00071c5d8c74d4a9c7b88b856b31fd63/raw/3435ba419e8fe1b0ebc6406977538a098a70e913/resume.json",
-    "lastModified": "2021-12-19",
-    "theme": "jsonresume-theme-elegant"
-  },
   "basics": {
-    "name": "Matjah Sonneveld",
     "label": "Cloud Engineer",
-    "picture": "https://images.credly.com/size/176x176/images/0060c656-cd90-4da8-955d-6abc5fd9f22a/blob.jpeg",
+    "website": "https://matjah.eu",
     "email": "matjah@matjah.eu",
     "phone": "+31651332403",
-    "url": "https://matjahs.github.io",
-    "location": {
-      "city": "Nijmegen",
-      "countryCode": "NL",
-      "region": "Gelderland"
-    },
+    "name": "Matjah Sonneveld",
+    "picture": "https://images.credly.com/size/176x176/images/0060c656-cd90-4da8-955d-6abc5fd9f22a/blob.jpeg",
     "profiles": [
       {
         "network": "Linkedin",
+        "username": "matjahs",
         "url": "https://linkedin.com/in/matjahs"
       },
       {
@@ -32,9 +21,9 @@
   },
   "work": [
     {
-      "name": "BlueConic",
-      "position": "Cloud Engineer",
+      "company": "BlueConic",
       "website": "https://blueconic.com",
+      "position": "Cloud Engineer",
       "startDate": "2021-04-01",
       "summary": "Increasing the reliability and scalability of BlueConic's cloud infrastructure",
       "highlights": [
@@ -43,11 +32,11 @@
       ]
     },
     {
-      "name": "BlueConic",
-      "position": "Software Engineer",
+      "company": "BlueConic",
       "website": "https://blueconic.com",
+      "position": "Software Engineer",
       "startDate": "2020-04-01",
-      "endDate": "2021-03-31",
+      "endDate": "2021-04-01",
       "summary": "Plugin development and maintenance",
       "highlights": [
         "Improved DX for plugin developers",
@@ -55,67 +44,103 @@
       ]
     },
     {
-      "name": "Hexon B.V.",
+      "company": "Hexon",
+      "website": "https://hexon.nl",
       "position": "Programmer",
       "startDate": "2013-02-01",
-      "endDate": "2020-03-01",
-      "summary": "Impelentation of new automated import/export of customer API data"
+      "endDate": "2020-04-01",
+      "summary": "Implementation of new automated import/export of customer API data",
+      "highlights": []
     }
   ],
   "education": [
     {
       "institution": "Radboud University, Nijmegen",
-      "area": "Computing Science",
-      "studyType": "Bachelor of Science (BSc)",
+      "courses": [
+        "Computer Security",
+        "A.I. and Machine Learning"
+      ],
       "startDate": "2011-09-01",
       "endDate": "2019-11-03",
-      "courses": ["Computer Security", "Artificial Intelligence"]
+      "area": "Computer Science",
+      "studyType": "Bachelor"
     }
   ],
   "certificates": [
     {
-      "name": "AWS Certified DevOps Engineer Professional",
-      "url": "https://www.credly.com/badges/117bbf98-4498-418d-a11e-94b329d99a90",
-      "urlName": "verif",
-      "date": "2021-12-13",
-      "issuer": "Amazon Web Services"
-    },
-    {
-      "name": "AWS Certified Solutions Architect Associate",
-      "url": "https://www.credly.com/badges/0a9ec584-d847-41af-a37e-84144b6c8761",
-      "date": "2021-06-11",
-      "issuer": "Amazon Web Services"
-    },
-    {
       "name": "AWS Certified Cloud Practitioner",
-      "url": "https://www.credly.com/badges/a8f29e68-720a-451d-a4e8-8b430d3c28ac",
-      "date": "2021-03-30",
-      "issuer": "Amazon Web Services"
+      "issuer": "Amazon Web Services (AWS)",
+      "date": "2021-03",
+      "url": "https://www.credly.com/badges/b9ebf29a-3870-4db5-ad24-34ed1e7061e1?source=linked_in_profile"
+    },
+    {
+      "name": "AWS Certified Solutions Architect - Associate",
+      "issuer": "Amazon Web Services (AWS)",
+      "date": "2021-06",
+      "url": "https://www.credly.com/badges/0a9ec584-d847-41af-a37e-84144b6c8761?source=linked_in_profile"
+    },
+    {
+      "name": "AWS Certified DevOps Engineer - Professional",
+      "issuer": "Amazon Web Services (AWS)",
+      "date": "2021-12",
+      "url": "https://www.credly.com/badges/117bbf98-4498-418d-a11e-94b329d99a90?source=linked_in_profile"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Frontend",
+      "level": "Advanced",
+      "keywords": [
+        "TypeScript",
+        "React",
+        "TDD"
+      ]
+    },
+    {
+      "name": "Backend",
+      "level": "Master",
+      "keywords": [
+        "Go",
+        "Nodejs",
+        "Python"
+      ]
+    },
+    {
+      "name": "Infrastructure",
+      "level": "Advanced",
+      "keywords": [
+        "SaltStack",
+        "Terraform",
+        "CI/CD"
+      ]
+    },
+    {
+      "name": "Other",
+      "level": "Advanced",
+      "keywords": [
+        "Docker",
+        "Linux",
+        "Bash"
+      ]
     }
   ],
   "awards": [
     {
       "title": "Blueconic Humility Award",
-      "date": "2021-01-09",
-      "awarder": "BlueConic (as part of ops-team)",
-      "summary": "To the person (or team) who   credit for their work; demonstrates tremendous compassion and empathy for everyone; and for whom no job is too small."
+      "date": "2021-12-09",
+      "awarder": "BlueConic"
     }
   ],
-  "skills": [
+  "languages": [
     {
-      "name": "Frontend Development",
-      "keywords": ["JS", "TS", "React", "Cypress", "Jest"],
-      "level": "Advanced"
+      "language": "Dutch",
+      "level": "10",
+      "years": 30
     },
     {
-      "name": "Backend Development",
-      "keywords": ["Go", "Node.js", "Python", "Docker"],
-      "level": "Master"
-    },
-    {
-      "name": "DevOps",
-      "keywords": ["AWS", "SaltStack", "Terraform", "CI/CD", "Linux"],
-      "level": "Advanced"
+      "language": "English",
+      "level": "8",
+      "years": 18
     }
   ]
 }
