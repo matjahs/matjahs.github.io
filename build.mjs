@@ -20,7 +20,7 @@ const html = theme.render(resume);
 if (!fs.existsSync(OUTPUT_DIR)) {
   fs.mkdirSync(OUTPUT_DIR);
 }
-}
+
 const script = `<script type="text/javascript">
   (function (d, u, h, s) {
     h = d.getElementsByTagName('head')[0];
@@ -30,7 +30,7 @@ const script = `<script type="text/javascript">
     h.appendChild(s);
   })(document, 'https://grow.clearbitjs.com/api/pixel.js?v=');
 </script>`
-const injectScript = (html) => html.replace("<body>", script + "<body>");
+const injectScript = (html) => html.replace("</head>", script + "</head>");
 // Write the HTML to the output directory
 fs.writeFileSync("./dist/index.html", injectScript(html));
 
