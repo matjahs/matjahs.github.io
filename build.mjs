@@ -1,37 +1,54 @@
-import fs from "fs";
-import got from "got";
+import * as path from "node:path"
+import * as url from "node:url";
+import * as theme from "jsonresume-theme-even";
+import {render} from "resumed";
+import fs from "fs-jetpack"
+import fetch from "node-fetch";
 
-const THEME_NAME = "elegant";
-const USE_GIST = false;
+const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
+
 const OUTPUT_DIR = "dist";
-const RESUME_JSON_URL =
+const GIST_URL =
   "https://gist.githubusercontent.com/matjahs/00071c5d8c74d4a9c7b88b856b31fd63/raw/resume.json";
+const RESUME_FILENAME = `resume.json`;
 
-// Import theme
-const theme = await import(`jsonresume-theme-${THEME_NAME}`);
-// Fetch gist containing resume data
-let resume = JSON.parse(fs.readFileSync(`resume.json`, "utf8"));
-if (USE_GIST) {
-  resume = await got.get(RESUME_JSON_URL).json();
+async function fetchResume() {
+  const response = await fetch(GIST_URL);
+
+  if (!response.ok) {
+    return console.error(`request failed!`, await response.text());
+  }
+
+  const json = await response.json();
+
+  await fs.writeAsync(RESUME_FILENAME, json, {jsonIndent: 2, atomic: true});
+
+  return json;
 }
-// Apply theme to resume JSON
-const html = theme.render(resume);
+
+// Removing previous build
+if (!fs.exists(OUTPUT_DIR)) {
+  console.info(`removing previous builds...`);
+  fs.remove(OUTPUT_DIR);
+}
 // Make sure that the output directory exists
-if (!fs.existsSync(OUTPUT_DIR)) {
-  fs.mkdirSync(OUTPUT_DIR);
+if (!fs.exists(OUTPUT_DIR)) {
+  console.info(`creating output directory...`, OUTPUT_DIR);
+  fs.dir(OUTPUT_DIR);
 }
 
-const script = `<script type="text/javascript">
-  (function (d, u, h, s) {
-    h = d.getElementsByTagName('head')[0];
-    s = d.createElement('script');
-    s.async = 1;
-    s.src = u + new Date().getTime();
-    h.appendChild(s);
-  })(document, 'https://grow.clearbitjs.com/api/pixel.js?v=');
-</script><script src="https://k019.matjah.eu/script.js"></script>`
-const injectScript = (html) => html.replace("</head>", script + "</head>");
-// Write the HTML to the output directory
-fs.writeFileSync("./dist/index.html", injectScript(html));
+console.info(`downloading ${GIST_URL}`);
+const json = await fetchResume(); 
 
-console.log(`Built resume with ${THEME_NAME} theme into ./dist/index.html`);
+if (!json) {
+  // fallback to resume.json
+  console.warning("loading resume.json");
+  json = JSON.parse(fs.readFileSync(`resume.json`, "utf8"));
+}
+
+// Apply theme to resume JSON
+// const html = theme.render(resume);
+const resume = fs.read(RESUME_FILENAME, "json");
+const html = await render(resume, theme);
+fs.write(path.join(__dirname, "./dist/index.html"), html);
+// console.debug(output)

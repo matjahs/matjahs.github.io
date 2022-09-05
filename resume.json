@@ -1,13 +1,13 @@
 {
   "meta": {
     "canonical": "https://matjah.eu",
-    "version": "1.1.0",
-    "lastModified": "2022-01-09"
+    "version": "1.0.0",
+    "lastModified": "2022-01-09T00:00:00.000Z"
   },
   "basics": {
-    "label": "Cloud Engineer",
+    "label": "DevOps Engineer",
     "email": "matjah@matjah.eu",
-    "phone": "",
+    "phone": "+31651332403",
     "website": "https://matjah.eu",
     "name": "Matjah Sonneveld",
     "location": {
@@ -35,16 +35,26 @@
   },
   "work": [
     {
+      "name": "Radboudumc",
+      "location": "Nijmegen",
+      "url": "https://radboudumc.nl",
+      "position": "DevOps Automation Specialist",
+      "startDate": "2022-07-25",
+      "summary": "Providing DevOps-as-a-Service to the Information Management organization within Radboudumc.",
+      "highlights": []
+    },
+    {
       "name": "BlueConic",
       "location": "Nijmegen",
       "url": "https://blueconic.com",
       "position": "Cloud Engineer",
       "startDate": "2021-04-01",
-      "summary": "Increasing the reliability and scalability of BlueConic's cloud infrastructure.",
+      "endDate": "2022-07-01",
+      "summary": "Increasing the reliability and scalability of BlueConic's cloud infrastructure",
       "highlights": [
-        "Created SaltStack setup to automate configuration management across BlueConic's AWS infrastructure.",
-        "Developed tools for managing BlueConic's infrastructure.",
-        "Incident response."
+        "Created SaltStack setup to automate configuration management across BlueConic's AWS infrastructure",
+        "Developed tools for managing BlueConic's infrastructure",
+        "Incident response"
       ]
     },
     {
@@ -56,9 +66,8 @@
       "endDate": "2021-04-01",
       "summary": "Plugin development and maintenance",
       "highlights": [
-        "Created new plugins for the BlueConic platform.",
-        "Increased developer effectiveness and improving developer experience.",
-        "Adapted CI/CD tools to accommodate for TypeScript/React plugins."
+        "Improved DX for plugin developers",
+        "Modernized CI/CD setup for Yarn/TS/React monorepo"
       ]
     },
     {
@@ -69,11 +78,11 @@
       "position": "Software Developer",
       "startDate": "2013-02-01",
       "endDate": "2020-04-01",
-      "summary": "Full stack development",
+      "summary": "Full stack developer",
       "highlights": [
-        "PHP, MySQL, Go, SVN and Git development.",
-        "Developed data ingestion and processing tools for Automotive customers.",
-        "Developed an embeddable web application to visualize Automotive inventory."
+        "PHP, MySQL, Go, SVN and Git development",
+        "Developed data ingestion and processing tools for Automotive customers",
+        "Developed an embeddable web application to visualize Automotive inventory"
       ]
     }
   ],
@@ -113,7 +122,6 @@
   ],
   "skills": [
     {
-
       "name": "Frontend",
       "level": "Advanced",
       "keywords": [
@@ -128,20 +136,33 @@
       "keywords": [
         "Go",
         "Nodejs",
-        "Python",
-        "Bash"
+        "Python"
       ]
     },
     {
       "name": "Infrastructure",
       "level": "Advanced",
       "keywords": [
-        "Linux",
         "SaltStack",
         "Terraform",
-        "CI/CD",
-        "Docker"
+        "CI/CD"
       ]
+    },
+    {
+      "name": "Other",
+      "level": "Advanced",
+      "keywords": [
+        "Docker",
+        "Linux",
+        "Bash"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Blueconic Humility Award",
+      "date": "2021-12-09",
+      "awarder": "BlueConic"
     }
   ],
   "languages": [
