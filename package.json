@@ -15,7 +15,7 @@
     "build": "node ./build.mjs"
   },
   "dependencies": {
-    "fs-jetpack": "^5.0.0",
+    "fs-jetpack": "^5.1.0",
     "got": "latest",
     "jsonresume-theme-even": "^0.17.1",
     "node-fetch": "^3.2.10",
