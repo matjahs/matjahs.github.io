@@ -18,7 +18,7 @@
     "fs-jetpack": "^5.1.0",
     "got": "latest",
     "jsonresume-theme-even": "^0.17.1",
-    "node-fetch": "^3.2.10",
+    "node-fetch": "^3.3.0",
     "resumed": "^1.0.3"
   },
   "engines": {
