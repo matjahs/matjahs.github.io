@@ -149,6 +149,14 @@
       ]
     },
     {
+      "name": "Cloud",
+      "level": "Advanced",
+      "keywords": [
+        "AWS",
+        "Azure"
+      ]
+    },
+    {
       "name": "Other",
       "level": "Advanced",
       "keywords": [
