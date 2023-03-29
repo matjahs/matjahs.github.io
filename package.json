@@ -25,6 +25,6 @@
     "node": ">=16.0.0"
   },
   "devDependencies": {
-    "@kurone-kito/jsonresume-types": "^0.3.5"
+    "@kurone-kito/jsonresume-types": "^0.3.6"
   }
 }
