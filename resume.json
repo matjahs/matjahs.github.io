@@ -1,14 +1,14 @@
 {
   "meta": {
-    "canonical": "https://matjah.eu",
-    "version": "1.0.0",
+    "canonical": "https://matjah.nl",
+    "version": "1.1.0",
     "lastModified": "2022-01-09T00:00:00.000Z"
   },
   "basics": {
-    "label": "DevOps Engineer",
-    "email": "matjah@matjah.eu",
+    "label": "Platform Engineer",
+    "email": "matjah@matjah.nl",
     "phone": "+31651332403",
-    "website": "https://matjah.eu",
+    "website": "https://matjah.nl",
     "name": "Matjah Sonneveld",
     "location": {
       "address": "",
@@ -17,7 +17,7 @@
       "postalCode": "",
       "region": "Gelderland"
     },
-    "url": "https://matjah.eu",
+    "url": "https://matjah.nl",
     "image": "https://images.credly.com/size/176x176/images/0060c656-cd90-4da8-955d-6abc5fd9f22a/blob.jpeg",
     "summary": "",
     "profiles": [
@@ -38,10 +38,13 @@
       "name": "Radboudumc",
       "location": "Nijmegen",
       "url": "https://radboudumc.nl",
-      "position": "DevOps Automation Specialist",
+      "position": "Platform Engineer",
       "startDate": "2022-07-25",
       "summary": "Providing DevOps-as-a-Service to the Information Management organization within Radboudumc.",
-      "highlights": []
+      "highlights": [
+        "Implemented Azure Landing Zones platform to enable self-service, governance and cost-control.",
+        "Started our internal GHE service that enables all departments to join our GitHub Enterpise."
+      ]
     },
     {
       "name": "BlueConic",
@@ -145,7 +148,7 @@
       "keywords": [
         "SaltStack",
         "Terraform",
-        "CI/CD"
+        "VMware"
       ]
     },
     {
@@ -153,14 +156,15 @@
       "level": "Advanced",
       "keywords": [
         "AWS",
-        "Azure"
+        "Azure",
+        "VCF"
       ]
     },
     {
       "name": "Other",
       "level": "Advanced",
       "keywords": [
-        "Docker",
+        "Containers",
         "Linux",
         "Bash"
       ]
