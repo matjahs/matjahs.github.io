@@ -7,7 +7,7 @@ import fetch from "node-fetch";
 
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 
-const OUTPUT_DIR = "dist";
+const OUTPUT_DIR = '_site';
 const GIST_URL =
   "https://gist.githubusercontent.com/matjahs/00071c5d8c74d4a9c7b88b856b31fd63/raw/resume.json";
 const RESUME_FILENAME = `resume.json`;
@@ -50,5 +50,8 @@ if (!json) {
 // const html = theme.render(resume);
 const resume = fs.read(RESUME_FILENAME, "json");
 const html = await render(resume, theme);
-fs.write(path.join(__dirname, "./dist/index.html"), html);
-// console.debug(output)
+const outputPath = path.join(__dirname, `${OUTPUT_DIR}/index.html`)
+
+fs.write(outputPath, html);
+
+console.log(`done. output is in ${outputPath}`);
