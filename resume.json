@@ -10,11 +10,12 @@
     "phone": "+31651332403",
     "website": "https://matjah.nl",
     "name": "Matjah Sonneveld",
+    "summary": "Highly skilled Platform Engineer with extensive experience in cloud engineering, software development, and DevOps. Proven track record in implementing critical infrastructure improvements and automation solutions at Radboudumc, BlueConic, and Hexon. Holds multiple AWS certifications and a Bachelor's degree in Computer Science. Proficient in TypeScript, React, Go, Node.js, and cloud technologies such as AWS and Azure. Adept at enhancing system reliability, scalability, and performance.",
     "location": {
       "address": "",
       "city": "Nijmegen",
       "countryCode": "NL",
-      "postalCode": "",
+      "postalCode": "6541AA",
       "region": "Gelderland"
     },
     "url": "https://matjah.nl",
@@ -42,7 +43,10 @@
       "startDate": "2022-07-25",
       "summary": "Providing DevOps-as-a-Service to the Information Management organization within Radboudumc.",
       "highlights": [
+        "Deployment of a distributed Splunk Enterprise environment",
         "Implemented Azure Landing Zones platform to enable self-service, governance and cost-control.",
+        "Design and deployment of AWS Landing Zones platform",
+        "Transformation from traditional datacenter to private cloud (SDDC)",
         "Started our internal GHE service that enables all departments to join our GitHub Enterpise."
       ]
     },
@@ -55,9 +59,9 @@
       "endDate": "2022-07-01",
       "summary": "Increasing the reliability and scalability of BlueConic's cloud infrastructure",
       "highlights": [
-        "Created SaltStack setup to automate configuration management across BlueConic's AWS infrastructure",
-        "Developed tools for managing BlueConic's infrastructure",
-        "Incident response"
+        "Created SaltStack setup to automate configuration management for EC2 instances",
+        "Developed tools for managing BlueConic's AWS infra (Amazon Linux, EC2, ECS, etc.)",
+        "Incident response (on-call)"
       ]
     },
     {
@@ -69,8 +73,9 @@
       "endDate": "2021-04-01",
       "summary": "Plugin development and maintenance",
       "highlights": [
-        "Improved DX for plugin developers",
-        "Modernized CI/CD setup for Yarn/TS/React monorepo"
+        "Implemented codemods to automate 75% of the work of a jQuery migration affecting over 200 plugins",
+        "Modernized CI/CD pipelines to reduce runtime from 15 to 5 minutes",
+        "Co-created TS/React build process that increased plugin development velocity by 200%"
       ]
     },
     {
@@ -188,5 +193,8 @@
       "level": "8",
       "years": 18
     }
-  ]
+  ],
+  "projects": [],
+  "publications": [],
+  "volunteer": []
 }
