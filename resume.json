@@ -1,13 +1,12 @@
 {
   "meta": {
     "canonical": "https://matjah.nl",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "lastModified": "2022-01-09T00:00:00.000Z"
   },
   "basics": {
     "label": "Platform Engineer",
     "email": "matjah@matjah.nl",
-    "phone": "+31651332403",
     "website": "https://matjah.nl",
     "name": "Matjah Sonneveld",
     "summary": "Highly skilled Platform Engineer with extensive experience in cloud engineering, software development, and DevOps. Proven track record in implementing critical infrastructure improvements and automation solutions at Radboudumc, BlueConic, and Hexon. Holds multiple AWS certifications and a Bachelor's degree in Computer Science. Proficient in TypeScript, React, Go, Node.js, and cloud technologies such as AWS and Azure. Adept at enhancing system reliability, scalability, and performance.",
