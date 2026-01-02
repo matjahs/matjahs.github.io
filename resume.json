@@ -2,14 +2,14 @@
   "meta": {
     "canonical": "https://matjah.nl",
     "version": "1.3.1",
-    "lastModified": "2026-01-02T10:04:35.034Z"
+    "lastModified": "2026-01-02T10:13:01.036Z"
   },
   "basics": {
     "label": "Senior Platform Engineer",
     "email": "matjah@matjah.nl",
     "website": "https://matjah.nl",
     "name": "Matjah Sonneveld",
-    "summary": "Senior Platform Engineer with deep experience designing and operating hybrid and private cloud platforms at enterprise scale. Specialized in VMware Cloud Foundation, Kubernetes platform engineering, Infrastructure as Code, and GitOps-driven automation. Proven ability to translate complex infrastructure into reliable, self-service platforms with strong security, identity, and governance foundations.",
+    "summary": "Senior Platform Engineer focused on building internal platforms that improve reliability and developer self-service. Deep experience across hybrid/private cloud, Kubernetes platform engineering, Infrastructure as Code, and GitOps automation, with a software-engineering mindset (Go/TypeScript) for durable tooling. Proven ability to translate complex infrastructure into secure, governed platforms that scale.",
     "location": {
       "address": "",
       "city": "Nijmegen",
@@ -39,12 +39,12 @@
       "url": "https://radboudumc.nl",
       "position": "Platform Engineer",
       "startDate": "2022-07-25",
-      "summary": "Providing DevOps-as-a-Service to the Information Management organization within Radboudumc.",
+      "summary": "Providing DevOps-as-a-Service and internal platform capabilities for the Information Management organization.",
       "highlights": [
-        "Deployment of a distributed Splunk Enterprise environment",
-        "Implemented Azure Landing Zones platform to enable self-service, governance and cost-control",
-        "Design and deployment of AWS Landing Zones platform",
-        "Transformation from traditional datacenter to private cloud (SDDC)",
+        "Deployed a distributed Splunk Enterprise environment for centralized observability",
+        "Implemented Azure Landing Zones to enable self-service, governance, and cost control",
+        "Designed and deployed AWS Landing Zones for standardized account and network foundations",
+        "Led the transformation from traditional datacenter to private cloud (SDDC)",
         "Started internal GitHub Enterprise Cloud service for organization-wide adoption"
       ]
     },
@@ -55,7 +55,7 @@
       "position": "Cloud Engineer",
       "startDate": "2021-04-01",
       "endDate": "2022-07-01",
-      "summary": "Increasing the reliability and scalability of BlueConic's cloud infrastructure.",
+      "summary": "Improved reliability and scalability of the cloud platform and supporting tooling.",
       "highlights": [
         "Built SaltStack-based configuration management for EC2 fleets",
         "Developed internal tooling for AWS infrastructure operations",
@@ -69,7 +69,7 @@
       "position": "Software Engineer",
       "startDate": "2020-04-01",
       "endDate": "2021-04-01",
-      "summary": "Plugin development and maintenance.",
+      "summary": "Built and maintained core product tooling with an emphasis on developer productivity.",
       "highlights": [
         "Implemented codemods to automate 75% of a large-scale jQuery migration",
         "Modernized CI/CD pipelines reducing build times from 15 to 5 minutes",
@@ -133,95 +133,53 @@
   ],
   "skills": [
     {
-      "name": "Platform & Infrastructure Architecture",
+      "name": "Platform Engineering",
       "level": "Expert",
       "keywords": [
-        "Platform Engineering",
-        "Hybrid Cloud Architecture",
-        "Infrastructure as Code",
+        "Internal Developer Platforms",
         "Self-Service Platforms",
-        "Reference Architecture Design"
+        "Infrastructure as Code",
+        "Reliability & SLOs"
       ]
     },
     {
-      "name": "VMware & Private Cloud",
-      "level": "Expert",
-      "keywords": [
-        "VMware Cloud Foundation",
-        "vSphere 8/9",
-        "NSX (T0/T1, BGP, Microsegmentation)",
-        "vSAN (ESA/OSA)",
-        "VCF Automation / Aria"
-      ]
-    },
-    {
-      "name": "Kubernetes & Cloud-Native",
+      "name": "Cloud-Native Platforms",
       "level": "Advanced",
       "keywords": [
-        "Kubernetes (Production Operations)",
-        "Talos Linux",
+        "Kubernetes",
         "Cilium",
-        "Ingress & Networking Architecture",
-        "Persistent Storage (CSI, Longhorn)"
-      ]
-    },
-    {
-      "name": "Automation & GitOps",
-      "level": "Advanced",
-      "keywords": [
-        "Terraform (OSS, HCP, Enterprise)",
-        "Terraform Module Design",
-        "Packer",
-        "SaltStack",
-        "GitOps",
         "Argo CD",
-        "Helm",
-        "Kustomize"
+        "Helm"
       ]
     },
     {
-      "name": "Identity, Security & Compliance",
-      "level": "Advanced",
-      "keywords": [
-        "Active Directory",
-        "PKI / AD CS",
-        "HashiCorp Vault",
-        "Secrets Management",
-        "SAML / OIDC",
-        "Zero Trust Architecture",
-        "Security Hardening & Baselines"
-      ]
-    },
-    {
-      "name": "Cloud Providers",
-      "level": "Advanced",
-      "keywords": [
-        "AWS (Landing Zones, Control Tower, IAM)",
-        "Azure (Identity, Networking, Governance)",
-        "Hybrid Cloud Integration"
-      ]
-    },
-    {
-      "name": "Observability & Operations",
-      "level": "Advanced",
-      "keywords": [
-        "Splunk Enterprise",
-        "Logging & Metrics Architecture",
-        "Capacity Planning",
-        "Incident Response",
-        "Platform Reliability"
-      ]
-    },
-    {
-      "name": "Programming & Tooling",
+      "name": "Automation & Development",
       "level": "Advanced",
       "keywords": [
         "Go",
         "TypeScript",
-        "Bash",
-        "PowerShell",
-        "CLI Tooling",
-        "API Design"
+        "Terraform",
+        "CI/CD Automation"
+      ]
+    },
+    {
+      "name": "Security & Identity",
+      "level": "Advanced",
+      "keywords": [
+        "IAM",
+        "SAML / OIDC",
+        "HashiCorp Vault",
+        "Zero Trust Architecture"
+      ]
+    },
+    {
+      "name": "Cloud Foundations",
+      "level": "Advanced",
+      "keywords": [
+        "AWS Landing Zones",
+        "Azure Networking",
+        "VMware Cloud Foundation",
+        "Hybrid Cloud Integration"
       ]
     }
   ],
