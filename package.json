@@ -15,7 +15,7 @@
   "scripts": {
     "clean": "rm -rf ./dist",
     "build": "npm run clean && tsc",
-    "start": "tsx ./build.ts"
+    "start": "tsx ./src/build.ts"
   },
   "dependencies": {
     "@octokit/core": "^7.0.6",

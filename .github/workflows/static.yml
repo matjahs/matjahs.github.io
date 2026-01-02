@@ -55,6 +55,7 @@ jobs:
           publish_dir: _site
           destination_dir: previews/pr-${{ github.event.number }}
           keep_files: true
+          cname: ${{ vars.PAGES_CNAME }}
 
       - name: Compute preview URL
         id: preview-url
@@ -126,3 +127,4 @@ jobs:
           publish_branch: gh-pages
           publish_dir: _site
           keep_files: true
+          cname: ${{ vars.PAGES_CNAME }}
