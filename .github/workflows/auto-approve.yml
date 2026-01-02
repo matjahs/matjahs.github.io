@@ -1,15 +1,18 @@
 name: Dependabot auto-approve
 
-on: pull_request
+on: pull_request_target
 
 permissions:
   pull-requests: write
   contents: write
-  issues: write
-  repository-projects: write
+
+concurrency:
+  group: dependabot-auto-approve
+  cancel-in-progress: true
 
 jobs:
   dependabot:
+    timeout-minutes: 5
     runs-on: ubuntu-latest
     if: github.event.pull_request.user.login == 'dependabot[bot]' && github.repository == 'matjahs/matjahs.github.io'
     steps:

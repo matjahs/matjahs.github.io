@@ -6,12 +6,13 @@ import fs from "fs-jetpack";
 
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 
-const OUTPUT_DIR = '_site';
+const PROJECT_ROOT = process.cwd();
+const OUTPUT_DIR = path.join(PROJECT_ROOT, "_site");
 const RESUME_FILENAME = "resume.json";
-const OUTPUT_PATH = path.join(__dirname, OUTPUT_DIR, 'index.html');
+const OUTPUT_PATH = path.join(OUTPUT_DIR, "index.html");
 
 // Removing previous build
-if (!fs.exists(OUTPUT_DIR)) {
+if (fs.exists(OUTPUT_DIR)) {
   console.info(`removing previous builds...`);
   fs.remove(OUTPUT_DIR);
 }
