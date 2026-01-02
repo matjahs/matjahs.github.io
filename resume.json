@@ -2,31 +2,31 @@
   "meta": {
     "canonical": "https://matjah.nl",
     "version": "1.2.0",
-    "lastModified": "2026-01-01T00:00:00.000Z"
+    "lastModified": "2022-01-09T00:00:00.000Z"
   },
   "basics": {
-    "label": "Senior Platform Engineer",
+    "label": "Platform Engineer",
     "email": "matjah@matjah.nl",
     "website": "https://matjah.nl",
     "name": "Matjah Sonneveld",
-    "summary": "Senior Platform Engineer with deep experience designing and operating hybrid and private cloud platforms at enterprise scale. Specialized in VMware Cloud Foundation, Kubernetes platform engineering, Infrastructure as Code, and GitOps-driven automation. Proven ability to translate complex infrastructure into reliable, self-service platforms with strong security, identity, and governance foundations.",
     "location": {
       "address": "",
       "city": "Nijmegen",
       "countryCode": "NL",
-      "postalCode": "6541AA",
+      "postalCode": "",
       "region": "Gelderland"
     },
     "url": "https://matjah.nl",
     "image": "https://images.credly.com/size/176x176/images/0060c656-cd90-4da8-955d-6abc5fd9f22a/blob.jpeg",
+    "summary": "",
     "profiles": [
       {
-        "network": "LinkedIn",
+        "network": "Linkedin",
         "username": "matjahs",
         "url": "https://linkedin.com/in/matjahs"
       },
       {
-        "network": "GitHub",
+        "network": "Github",
         "username": "matjahs",
         "url": "https://github.com/matjahs"
       }
@@ -41,11 +41,8 @@
       "startDate": "2022-07-25",
       "summary": "Providing DevOps-as-a-Service to the Information Management organization within Radboudumc.",
       "highlights": [
-        "Deployment of a distributed Splunk Enterprise environment",
-        "Implemented Azure Landing Zones platform to enable self-service, governance and cost-control",
-        "Design and deployment of AWS Landing Zones platform",
-        "Transformation from traditional datacenter to private cloud (SDDC)",
-        "Started internal GitHub Enterprise Cloud service for organization-wide adoption"
+        "Implemented Azure Landing Zones platform to enable self-service, governance and cost-control.",
+        "Started our internal GHE service that enables all departments to join our GitHub Enterpise."
       ]
     },
     {
@@ -55,11 +52,11 @@
       "position": "Cloud Engineer",
       "startDate": "2021-04-01",
       "endDate": "2022-07-01",
-      "summary": "Increasing the reliability and scalability of BlueConic's cloud infrastructure.",
+      "summary": "Increasing the reliability and scalability of BlueConic's cloud infrastructure",
       "highlights": [
-        "Built SaltStack-based configuration management for EC2 fleets",
-        "Developed internal tooling for AWS infrastructure operations",
-        "Participated in production incident response and on-call rotations"
+        "Created SaltStack setup to automate configuration management across BlueConic's AWS infrastructure",
+        "Developed tools for managing BlueConic's infrastructure",
+        "Incident response"
       ]
     },
     {
@@ -69,175 +66,126 @@
       "position": "Software Engineer",
       "startDate": "2020-04-01",
       "endDate": "2021-04-01",
-      "summary": "Plugin development and maintenance.",
+      "summary": "Plugin development and maintenance",
       "highlights": [
-        "Implemented codemods to automate 75% of a large-scale jQuery migration",
-        "Modernized CI/CD pipelines reducing build times from 15 to 5 minutes",
-        "Co-designed a TypeScript/React build pipeline increasing development velocity"
+        "Improved DX for plugin developers",
+        "Modernized CI/CD setup for Yarn/TS/React monorepo"
       ]
     },
     {
-      "name": "Hexon",
+      "company": "Hexon",
       "location": "Nijmegen",
+      "name": "Hexon",
       "url": "https://hexon.nl",
       "position": "Software Developer",
       "startDate": "2013-02-01",
       "endDate": "2020-04-01",
-      "summary": "Full stack software development.",
+      "summary": "Full stack developer",
       "highlights": [
         "PHP, MySQL, Go, SVN and Git development",
-        "Built data ingestion and processing pipelines for automotive customers",
-        "Developed embeddable web applications for inventory visualization"
+        "Developed data ingestion and processing tools for Automotive customers",
+        "Developed an embeddable web application to visualize Automotive inventory"
       ]
     }
   ],
   "certificates": [
     {
-      "name": "GitHub Administration",
-      "issuer": "Microsoft",
-      "date": "2025-11-07",
-      "url": "https://learn.microsoft.com/api/credentials/share/en-us/SonneveldMatjah-9264/AD9C5618D28ADF45"
-    },
-    {
       "name": "AWS Certified Cloud Practitioner",
       "issuer": "Amazon Web Services (AWS)",
       "date": "2021-03-01",
-      "url": "https://www.credly.com/badges/b9ebf29a-3870-4db5-ad24-34ed1e7061e1"
+      "url": "https://www.credly.com/badges/b9ebf29a-3870-4db5-ad24-34ed1e7061e1?source=linked_in_profile"
     },
     {
       "name": "AWS Certified Solutions Architect - Associate",
       "issuer": "Amazon Web Services (AWS)",
       "date": "2021-06-01",
-      "url": "https://www.credly.com/badges/0a9ec584-d847-41af-a37e-84144b6c8761"
+      "url": "https://www.credly.com/badges/0a9ec584-d847-41af-a37e-84144b6c8761?source=linked_in_profile"
     },
     {
       "name": "AWS Certified DevOps Engineer - Professional",
       "issuer": "Amazon Web Services (AWS)",
       "date": "2021-12-01",
-      "url": "https://www.credly.com/badges/117bbf98-4498-418d-a11e-94b329d99a90"
+      "url": "https://www.credly.com/badges/117bbf98-4498-418d-a11e-94b329d99a90?source=linked_in_profile"
     }
   ],
   "education": [
     {
       "institution": "Radboud University, Nijmegen",
       "url": "https://www.ru.nl",
-      "area": "Computer Science",
-      "studyType": "Bachelor",
-      "startDate": "2011-09-01",
-      "endDate": "2019-11-03",
       "courses": [
         "Computer Security",
         "A.I. and Machine Learning"
-      ]
+      ],
+      "startDate": "2011-09-01",
+      "endDate": "2019-11-03",
+      "area": "Computer Science",
+      "studyType": "Bachelor"
     }
   ],
   "skills": [
     {
-      "name": "Platform & Infrastructure Architecture",
-      "level": "Expert",
-      "keywords": [
-        "Platform Engineering",
-        "Hybrid Cloud Architecture",
-        "Infrastructure as Code",
-        "Self-Service Platforms",
-        "Reference Architecture Design"
-      ]
-    },
-    {
-      "name": "VMware & Private Cloud",
-      "level": "Expert",
-      "keywords": [
-        "VMware Cloud Foundation",
-        "vSphere 8/9",
-        "NSX (T0/T1, BGP, Microsegmentation)",
-        "vSAN (ESA/OSA)",
-        "VCF Automation / Aria"
-      ]
-    },
-    {
-      "name": "Kubernetes & Cloud-Native",
+      "name": "Frontend",
       "level": "Advanced",
       "keywords": [
-        "Kubernetes (Production Operations)",
-        "Talos Linux",
-        "Cilium",
-        "Ingress & Networking Architecture",
-        "Persistent Storage (CSI, Longhorn)"
+        "TypeScript",
+        "React",
+        "TDD"
       ]
     },
     {
-      "name": "Automation & GitOps",
-      "level": "Advanced",
-      "keywords": [
-        "Terraform (OSS, HCP, Enterprise)",
-        "Terraform Module Design",
-        "Packer",
-        "SaltStack",
-        "GitOps",
-        "Argo CD",
-        "Helm",
-        "Kustomize"
-      ]
-    },
-    {
-      "name": "Identity, Security & Compliance",
-      "level": "Advanced",
-      "keywords": [
-        "Active Directory",
-        "PKI / AD CS",
-        "HashiCorp Vault",
-        "Secrets Management",
-        "SAML / OIDC",
-        "Zero Trust Architecture",
-        "Security Hardening & Baselines"
-      ]
-    },
-    {
-      "name": "Cloud Providers",
-      "level": "Advanced",
-      "keywords": [
-        "AWS (Landing Zones, Control Tower, IAM)",
-        "Azure (Identity, Networking, Governance)",
-        "Hybrid Cloud Integration"
-      ]
-    },
-    {
-      "name": "Observability & Operations",
-      "level": "Advanced",
-      "keywords": [
-        "Splunk Enterprise",
-        "Logging & Metrics Architecture",
-        "Capacity Planning",
-        "Incident Response",
-        "Platform Reliability"
-      ]
-    },
-    {
-      "name": "Programming & Tooling",
-      "level": "Advanced",
+      "name": "Backend",
+      "level": "Master",
       "keywords": [
         "Go",
-        "TypeScript",
-        "Bash",
-        "PowerShell",
-        "CLI Tooling",
-        "API Design"
+        "Nodejs",
+        "Python"
       ]
+    },
+    {
+      "name": "Infrastructure",
+      "level": "Advanced",
+      "keywords": [
+        "SaltStack",
+        "Terraform",
+        "VMware"
+      ]
+    },
+    {
+      "name": "Cloud",
+      "level": "Advanced",
+      "keywords": [
+        "AWS",
+        "Azure",
+        "VCF"
+      ]
+    },
+    {
+      "name": "Other",
+      "level": "Advanced",
+      "keywords": [
+        "Containers",
+        "Linux",
+        "Bash"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Blueconic Humility Award",
+      "date": "2021-12-09",
+      "awarder": "BlueConic"
     }
   ],
   "languages": [
     {
       "language": "Dutch",
-      "level": "Native",
-      "years": 34
+      "level": "10",
+      "years": 30
     },
     {
       "language": "English",
-      "level": "Professional",
+      "level": "8",
       "years": 18
     }
-  ],
-  "projects": [],
-  "publications": [],
-  "volunteer": []
+  ]
 }
