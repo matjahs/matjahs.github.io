@@ -1,3 +1,6 @@
+_site/
+resume.json
+
 # Logs
 logs
 *.log
