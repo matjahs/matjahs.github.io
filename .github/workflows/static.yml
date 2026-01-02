@@ -28,12 +28,31 @@ jobs:
         uses: actions/setup-node@v6.1.0
         with:
           node-version: "24"
+          cache: "npm"
 
-      - run: npm install
+      - run: npm ci
+
+      - name: Verify lockfiles unchanged
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git status --porcelain
+            exit 1
+          fi
+
+      - name: Restore build cache
+        id: build-cache
+        uses: actions/cache@v5.0.1
+        with:
+          path: |
+            dist
+            _site
+          key: ${{ runner.os }}-build-${{ hashFiles('build.ts', 'gist.ts', 'resume.json', 'tsconfig.json', 'types.ts', 'package-lock.json') }}
 
       - run: npm run build
+        if: steps.build-cache.outputs.cache-hit != 'true'
 
       - run: node ./dist/build.js
+        if: steps.build-cache.outputs.cache-hit != 'true'
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -45,7 +64,7 @@ jobs:
 
       - name: Deploy preview to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v4.0.5
         with:
           preview: true
 
@@ -82,12 +101,31 @@ jobs:
         uses: actions/setup-node@v6.1.0
         with:
           node-version: "24"
+          cache: "npm"
 
-      - run: npm install
+      - run: npm ci
+
+      - name: Verify lockfiles unchanged
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git status --porcelain
+            exit 1
+          fi
+
+      - name: Restore build cache
+        id: build-cache
+        uses: actions/cache@v5.0.1
+        with:
+          path: |
+            dist
+            _site
+          key: ${{ runner.os }}-build-${{ hashFiles('build.ts', 'gist.ts', 'resume.json', 'tsconfig.json', 'types.ts', 'package-lock.json') }}
 
       - run: npm run build
+        if: steps.build-cache.outputs.cache-hit != 'true'
 
       - run: node ./dist/build.js
+        if: steps.build-cache.outputs.cache-hit != 'true'
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
