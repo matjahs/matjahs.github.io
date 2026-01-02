@@ -1,0 +1,41 @@
+name: Cleanup preview
+
+on:
+  pull_request:
+    types: [closed]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cleanup-preview
+  cancel-in-progress: true
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout gh-pages
+        uses: actions/checkout@v6.0.1
+        with:
+          ref: gh-pages
+
+      - name: Remove preview directory
+        run: |
+          set -euo pipefail
+          dir="previews/pr-${{ github.event.number }}"
+          if [ ! -d "$dir" ]; then
+            exit 0
+          fi
+          rm -rf "$dir"
+
+      - name: Commit and push cleanup
+        run: |
+          set -euo pipefail
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "chore: remove preview for PR #${{ github.event.number }}"
+            git push
+          fi
