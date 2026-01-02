@@ -7,9 +7,7 @@ on:
   pull_request:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
   pull-requests: write
 
 concurrency:
@@ -39,37 +37,39 @@ jobs:
             exit 1
           fi
 
-      - name: Restore build cache
-        id: build-cache
-        uses: actions/cache@v5.0.1
-        with:
-          path: |
-            dist
-            _site
-          key: ${{ runner.os }}-build-${{ hashFiles('build.ts', 'gist.ts', 'resume.json', 'tsconfig.json', 'types.ts', 'package-lock.json') }}
-
       - run: npm run build
-        if: steps.build-cache.outputs.cache-hit != 'true'
 
       - run: node ./dist/build.js
-        if: steps.build-cache.outputs.cache-hit != 'true'
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+      - name: Add CNAME if present
+        run: |
+          if [ -f CNAME ]; then
+            cp CNAME _site/CNAME
+          fi
 
-      - name: Upload GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v4
+      - name: Deploy preview to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: _site
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: _site
+          destination_dir: previews/pr-${{ github.event.number }}
+          keep_files: true
+          cname: ${{ vars.PAGES_CNAME }}
 
-      - name: Deploy preview to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4.0.5
-        with:
-          preview: true
+      - name: Compute preview URL
+        id: preview-url
+        run: |
+          owner="${{ github.repository_owner }}"
+          repo="${{ github.event.repository.name }}"
+          if [ "$repo" = "${owner}.github.io" ]; then
+            base="https://${owner}.github.io"
+          else
+            base="https://${owner}.github.io/${repo}"
+          fi
+          echo "url=${base}/previews/pr-${{ github.event.number }}/" >> "$GITHUB_OUTPUT"
 
       - name: Find preview comment
-        if: steps.deployment.outputs.page_url != ''
         id: find-preview-comment
         uses: peter-evans/find-comment@v4
         with:
@@ -78,20 +78,18 @@ jobs:
           body-includes: "Preview:"
 
       - name: Comment preview URL
-        if: steps.deployment.outputs.page_url != ''
         uses: peter-evans/create-or-update-comment@v5
         with:
           issue-number: ${{ github.event.pull_request.number }}
           comment-id: ${{ steps.find-preview-comment.outputs.comment-id }}
           edit-mode: replace
           body: |
-            Preview: ${{ steps.deployment.outputs.page_url }}
+            Preview: ${{ steps.preview-url.outputs.url }}
 
   deploy:
     if: github.event_name != 'pull_request'
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -112,29 +110,21 @@ jobs:
             exit 1
           fi
 
-      - name: Restore build cache
-        id: build-cache
-        uses: actions/cache@v5.0.1
-        with:
-          path: |
-            dist
-            _site
-          key: ${{ runner.os }}-build-${{ hashFiles('build.ts', 'gist.ts', 'resume.json', 'tsconfig.json', 'types.ts', 'package-lock.json') }}
-
       - run: npm run build
-        if: steps.build-cache.outputs.cache-hit != 'true'
 
       - run: node ./dist/build.js
-        if: steps.build-cache.outputs.cache-hit != 'true'
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+      - name: Add CNAME if present
+        run: |
+          if [ -f CNAME ]; then
+            cp CNAME _site/CNAME
+          fi
 
-      - name: Upload GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v4
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: _site
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: _site
+          keep_files: true
+          cname: ${{ vars.PAGES_CNAME }}

@@ -1,7 +1,5 @@
-_site/
-resume.json
 .ansible/
-dist/
+_site/
 
 # Logs
 logs
