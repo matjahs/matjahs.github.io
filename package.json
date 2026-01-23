@@ -25,7 +25,7 @@
     "jsonresume-theme-even": "^0.26.1",
     "node-fetch": "^3.3.2",
     "resumed": "^6.1.0",
-    "zod": "^4.3.5"
+    "zod": "^4.3.6"
   },
   "engines": {
     "node": ">=24"
